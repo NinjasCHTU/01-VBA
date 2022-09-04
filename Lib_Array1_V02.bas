@@ -1,20 +1,5 @@
 Attribute VB_Name = "Lib_Array1"
 
-Sub A_printArr(inArray)
-'@@@@@@@@@@@@@@@@Dependency -> No
-    Dim printCell, printCell_Temp As Range
-    Dim arr01() As Variant
-    'arr01 = Array(1, 2, 3, 4, 5, 6, 7)
-    'n01 = 7
-    n = UBound(inArray)
-    'Set printCell_Temp = Range("K15")
-    Set printCell = Application.InputBox(Title:="Print Array", Prompt:="Select Range to print out", Type:=8)
-    For i = 0 To n
-        Cells(printCell.row + i, printCell.column) = inArray(i)
-    Next i
-    
-    
-End Sub
 
 Function A_toArray1d(selectRange)
 '@@@@@@@@@@@@@@@@Dependency -> No
