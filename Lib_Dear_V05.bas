@@ -1,17 +1,5 @@
 Attribute VB_Name = "Lib_Dear1"
-Function D_isItInWS(ws_name, elem, Optional n = 1000, Optional ans_type = 0)
-'''''''''''''''''''''''''''''''''''''''''''''(Not Done)
-'@@@@@@@@@@@@@@@@Dependency -> Space (St_SelectFromTL)
-    Dim first_cell, ws_range As Range
-    Set first_cell = Worksheets(ws_name).Range("A1")
-    
 
-'Stuck here: can't get the ws_range to work
-    Set ws_range = St_SelectFromTL(first_cell, 5, 5)
-    D_isItInWS = ws_range
-    
-
-End Function
 
 Function D_isItInRange(rangeIn, elem)
 '@@@@@@@@@@@@@@@@Dependency -> no
