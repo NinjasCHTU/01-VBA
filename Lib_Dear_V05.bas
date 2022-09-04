@@ -1,20 +1,6 @@
 Attribute VB_Name = "Lib_Dear1"
 
 
-Function D_isItInRange(rangeIn, elem)
-'@@@@@@@@@@@@@@@@Dependency -> no
-    res = False
-    For Each curr_cell In rangeIn
-        If curr_cell.Value = elem Then
-            res = curr_cell.Address
-        End If
-        
-        
-    Next curr_cell
-    D_isItInRange = res
-    
-
-End Function
 Function D_AlphaSmallV(n)
 '@@@@@@@@@@@@@@@@Dependency -> No
     Dim arr() As Variant
